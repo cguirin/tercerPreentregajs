@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label, input, button {
+    margin: 5px 0;
+}
+
+#resultado, #datos-persona {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+/* Agrego Media queries para los disintos dispositivos */
+
+@media (max-width: 768px) {
+    input[type="text"], input[type="number"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+}
